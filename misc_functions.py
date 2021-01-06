@@ -35,9 +35,9 @@ def get_file_unzip(url, folder):
 #####        DONT WORRY ITS HANDLED WITh 20 FILES        ###############
 ########################################################################
 
-def get_all_filenames(directory):
+def get_all_filenames(directory, depth):
     import os
-    nof_of_files = 20
+    nof_of_files = depth
     for dirname, _, filenames in os.walk(directory):
         if len(filenames) > nof_of_files:
             print("Just check in this ( {} ) directory you have more than {} file, if i expand you will go mad".format(dirname, nof_of_files))
