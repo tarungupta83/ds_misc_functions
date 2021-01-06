@@ -76,5 +76,3 @@ def divide_data(files_folder, no_of_files, make_folder):
             file_path = os.path.join(dirname, filename)
             shutil.move(file_path, dirname_path)
             print("Moved File " , file_path , " to ", dirname_path)
-
-get_file("https://images-na.ssl-images-amazon.com/images/I/71eXtqkndlL.jpg")
